@@ -40,16 +40,33 @@ Important distinction:
 
 MENU.BIN is a second-stage program. This does not mean that complete firmware images can run directly from the microSD card.
 
-5. Latest Version and Hardware Notes
+## 5. Current Bootloader Status
 
-The exact current bootloader version and release status have not yet been independently verified.
+The current m-bootloader version is 2.4.
 
-The original repository and its release history must be checked before selecting a version for MultiBoot development.
+Repository:
+https://github.com/jvitkauskas/m-bootloader
 
-The release notes describe microSD menu support on the FM-1 and SMK-37.
+The release identifies the build as 2.4-395e6cc.
 
-The FM-1 microSD hardware modification and its compatibility must still be verified for our own device.
+The bootloader has been tested on real FM-1 hardware.
 
+It supports loading and executing a secondary program:
+
+/MBOOT/MENU.BIN
+
+from a FAT32 microSD card.
+
+Important limitation:
+
+The SD card hardware modification for the FM-1
+has not yet been tested with this release.
+
+The m-card expansion board is still an
+untested prototype.
+
+MultiBoot must independently verify SD hardware
+compatibility before any installation or flashing.
 6. Proposed MultiBoot Approach
 
 The following is a proposal, not an implemented feature:
