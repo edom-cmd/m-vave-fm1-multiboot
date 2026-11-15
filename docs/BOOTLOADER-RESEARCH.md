@@ -42,7 +42,9 @@ MENU.BIN is a second-stage program. This does not mean that complete firmware im
 
 5. Latest Version and Hardware Notes
 
-The project release information available during this research identifies version 2.3, published in November 2026.
+The exact current bootloader version and release status have not yet been independently verified.
+
+The original repository and its release history must be checked before selecting a version for MultiBoot development.
 
 The release notes describe microSD menu support on the FM-1 and SMK-37.
 
